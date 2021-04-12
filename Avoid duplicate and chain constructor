@@ -1,0 +1,31 @@
+class cricketPlayers2:
+    name = ""
+    goodin = ""
+    bccirank = 0
+    rating = 0
+    nationality = ""
+    def getname(self):
+        return self.name
+    def getgoodin(self):
+        return self.goodin
+    def getbccirank(self):
+        return self.bccirank
+    def getrating(self):
+        return self.rating
+    def getnationality(self):
+        return self.nationality
+    def __init__(self,name,goodin,bccirank,rating,nationality):
+        self.name = name
+        self.goodin = goodin
+        self.bccirank = bccirank
+        self.rating = rating
+        self.nationality = nationality
+    
+        
+        
+c1 = cricketPlayers2("virat","batting",2,8,"indian")
+print(c1.getname)
+print(c1.getgoodin)
+print(c1.getbccirank)
+print(c1.getrating)
+print(c1.getnationality)
