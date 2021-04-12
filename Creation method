@@ -1,0 +1,23 @@
+class cricketPlayers:
+    name = ""
+    goodin = ""
+    bccirank = 0
+    rating = 0
+    nationality = ""
+    def __init__(self,name,goodin,bccirank,rating,nationality):
+        self.name = name
+        self.goodin = goodin
+        self.bccirank = bccirank
+        self.rating = rating
+        self.nationality = nationality
+    def getbccirating(self):
+        return self.bccirank
+    @classmethod
+    def cricketPlayersList(cls,name,goodin,bccirank):
+        return cricketPlayers(name,goodin,bccirank,0,0)
+    def display(self):
+        print(" %s is good in %s and his bcci rank is %s."%(self.name,self.goodin,self.bccirank))
+c1 = cricketPlayers.cricketPlayersList("virat","batting",2)
+c1.display()
+print("he has the bccirank rating",c1.getbccirating())
+    
