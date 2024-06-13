@@ -9,7 +9,7 @@ public class ATMAccessBad {
 	public final static String DENIED = "DENIED";
 	
 	public final static int CARD_NUMBER = 9080606609;
-	public final static int PIN_NUMBER = 2997;
+	public final static int PIN_NUMBER = 1997;
 	public final static double CARD_BALANCE = 5000.00;
 	
 	public ATMAccessBad() { state = CARD_ENTERED; }  
